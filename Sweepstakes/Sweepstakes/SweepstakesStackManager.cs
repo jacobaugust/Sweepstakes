@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class SweepstakesStackManager
+    class SweepstakesStackManager : ISweepstakesManager
     {
+        //Last In (last entered/newest), First Out
     }
 }
