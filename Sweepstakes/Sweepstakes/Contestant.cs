@@ -12,11 +12,11 @@ namespace Sweepstakes
         public string lastName;
         public string email;
         public int registrationNumber = 0;
-        UserInterface userInterface;
+        
 
         public Contestant()
         {
-            userInterface = new UserInterface();
+           
         }
     }
 }

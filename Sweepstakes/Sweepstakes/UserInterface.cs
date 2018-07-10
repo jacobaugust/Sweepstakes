@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class UserInterface
+    static class UserInterface
     {
-        public void GetFirstName(Contestant contestant)
+        public static void GetFirstName(Contestant contestant)
         {
             Console.WriteLine("Please enter your first name:");
             contestant.firstName = Console.ReadLine();
         }
-        public void GetLastName(Contestant contestant)
+        public static void GetLastName(Contestant contestant)
         {
             Console.WriteLine("Please enter your Last name:");
             contestant.lastName = Console.ReadLine();
         }
-        public void GetEmail(Contestant contestant)
+        public static void GetEmail(Contestant contestant)
         {
             Console.WriteLine("Please enter your E-mail address:");
             contestant.email = Console.ReadLine();
         }
-        public void GetRegistration(Contestant contestant)
+        public static void GetRegistration(Contestant contestant)
         {
             contestant.registrationNumber ++;
 
