@@ -10,17 +10,17 @@ namespace Sweepstakes
     {
        
 
-        public ISweepstakesManager GetManagerToUse(marketingFirm.managerSelection)
+        public ISweepstakesManager GetManagerToUse()
         {
 
-            switch(manager.ToLower())
+            switch(UserInterface.managerSelection.ToLower())
             {
                 case "stack":
                     return new SweepstakesStackManager();
                 case "queue":
                     return new SweepstakesQueueManager();
                 default:
-                    Console.WriteLine("Not a valid Sweepstakes Manager.");
+                    return null;
             }
         }
 

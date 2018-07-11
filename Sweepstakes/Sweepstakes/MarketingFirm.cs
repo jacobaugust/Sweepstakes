@@ -8,23 +8,28 @@ namespace Sweepstakes
 {
     class MarketingFirm 
     {
-        public string managerSelection;
+        
         Contestant contestant;
+        SweepstakesFactory sweepstakesFactory;
+        Sweepstakes sweepstakes;
+        
 
         public MarketingFirm()
         {
+            sweepstakes = new Sweepstakes();
+            ManagerSelection();
+            ContestantCollection();
+            ContestantCollection();
+            ContestantCollection();
+            ContestantCollection();
+            sweepstakes.PickWinner();
             
-        }
-
-        ISweepstakesManager sweepstakesManager;
-        public MarketingFirm(ISweepstakesManager sweepstakesManager)
-        {
-            this.sweepstakesManager = sweepstakesManager;
         }
         public void ManagerSelection()
         {
             UserInterface.GetSweepstakesManager();
-            sweepstakesFactory.GetManagerToUse(managerSelection);
+            sweepstakesFactory = new SweepstakesFactory();
+            sweepstakesFactory.GetManagerToUse();
         }
         public void ContestantCollection()
         {
@@ -33,6 +38,7 @@ namespace Sweepstakes
             UserInterface.GetLastName(contestant);
             UserInterface.GetEmail(contestant);
             UserInterface.GetRegistration(contestant);
+            sweepstakes.RegisterContestant(contestant);
         }
     }
 }

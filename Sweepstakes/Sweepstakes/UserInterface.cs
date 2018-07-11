@@ -8,14 +8,16 @@ namespace Sweepstakes
 {
     static class UserInterface
     {
+        public static string managerSelection;
+
         public static void GetFirstName(Contestant contestant)
         {
-            Console.WriteLine("Please enter your first name:");
+            Console.WriteLine("\n\nContestant Info:\n\nPlease enter your first name:");
             contestant.firstName = Console.ReadLine();
         }
         public static void GetLastName(Contestant contestant)
         {
-            Console.WriteLine("Please enter your Last name:");
+            Console.WriteLine("Please enter your last name:");
             contestant.lastName = Console.ReadLine();
         }
         public static void GetEmail(Contestant contestant)
@@ -25,13 +27,14 @@ namespace Sweepstakes
         }
         public static void GetRegistration(Contestant contestant)
         {
-            contestant.registrationNumber ++;
+            contestant.registrationNumber++;
 
         }
         public static void GetSweepstakesManager()
         {
             Console.WriteLine("Which data structure would you like to use? Please enter stack or queue:");
-            marketingFirm.managerSelection = Console.ReadLine();
+            managerSelection = Console.ReadLine();
         }
     }
+
 }

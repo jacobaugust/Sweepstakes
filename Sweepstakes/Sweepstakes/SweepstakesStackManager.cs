@@ -11,7 +11,7 @@ namespace Sweepstakes
         Stack<Sweepstakes> sweepstakesStack;
         //Last In (last entered/newest), First Out
 
-        public SweepstakesStackManager(Sweepstakes sweepstakes)
+        public SweepstakesStackManager()
         {
             sweepstakesStack = new Stack<Sweepstakes>();
         }

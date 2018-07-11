@@ -10,7 +10,8 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
-            
+            MarketingFirm marketingFirm1 = new MarketingFirm();
+            Console.ReadLine();
         }
     }
 }
