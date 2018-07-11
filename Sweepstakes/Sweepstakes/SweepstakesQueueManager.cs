@@ -9,9 +9,13 @@ namespace Sweepstakes
     class SweepstakesQueueManager : ISweepstakesManager
     {
         //First In (first arrived/oldest), First Out
+        public SweepstakesQueueManager()
+        {
+            Queue<Sweepstakes> sweepstakesQueue = new Queue<Sweepstakes>();
+        }
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            sweepstakesQueue.Enqueue(Sweepstakes);
         }
         public Sweepstakes GetSweepstakes()
         {

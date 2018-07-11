@@ -28,5 +28,6 @@ namespace Sweepstakes
             contestant.registrationNumber ++;
 
         }
+
     }
 }
