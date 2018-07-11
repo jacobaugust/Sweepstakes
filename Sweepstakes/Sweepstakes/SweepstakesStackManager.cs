@@ -8,21 +8,21 @@ namespace Sweepstakes
 {
     class SweepstakesStackManager : ISweepstakesManager
     {
-
+        Stack<Sweepstakes> sweepstakesStack;
         //Last In (last entered/newest), First Out
 
         public SweepstakesStackManager(Sweepstakes sweepstakes)
         {
-            Stack<Sweepstakes> sweepstakesStack = new Stack<Sweepstakes>();
+            sweepstakesStack = new Stack<Sweepstakes>();
         }
 
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-            sweepstakesStack.Push(Sweepstakes);
+            sweepstakesStack.Push(sweepstakes);
         }
         public Sweepstakes GetSweepstakes()
         {
-
+            return sweepstakesStack.Peek();
         }
       
 
