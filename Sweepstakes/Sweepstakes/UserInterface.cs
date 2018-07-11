@@ -28,6 +28,10 @@ namespace Sweepstakes
             contestant.registrationNumber ++;
 
         }
-
+        public static void GetSweepstakesManager()
+        {
+            Console.WriteLine("Which data structure would you like to use? Please enter stack or queue:");
+            marketingFirm.managerSelection = Console.ReadLine();
+        }
     }
 }

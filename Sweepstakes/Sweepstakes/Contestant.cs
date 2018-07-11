@@ -16,7 +16,8 @@ namespace Sweepstakes
 
         public Contestant()
         {
-           
+
+
         }
     }
 }

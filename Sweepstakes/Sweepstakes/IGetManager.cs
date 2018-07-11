@@ -8,6 +8,6 @@ namespace Sweepstakes
 {
     interface IGetManager
     {
-        ISweepstakesManager GetManagerToUse(string manager);
+        ISweepstakesManager GetManagerToUse(marketingFirm.managerSelection);
     }
 }

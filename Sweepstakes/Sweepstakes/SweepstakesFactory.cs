@@ -10,8 +10,9 @@ namespace Sweepstakes
     {
        
 
-        public ISweepstakesManager GetManagerToUse(string manager)
+        public ISweepstakesManager GetManagerToUse(marketingFirm.managerSelection)
         {
+
             switch(manager.ToLower())
             {
                 case "stack":
