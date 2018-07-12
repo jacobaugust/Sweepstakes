@@ -12,6 +12,7 @@ namespace Sweepstakes
         Contestant contestant;
         SweepstakesFactory sweepstakesFactory;
         Sweepstakes sweepstakes;
+        int registrationNumber;
         
 
         public MarketingFirm()
@@ -33,11 +34,11 @@ namespace Sweepstakes
         }
         public void ContestantCollection()
         {
-            contestant = new Contestant();
+            registrationNumber++;
+            contestant = new Contestant(registrationNumber);
             UserInterface.GetFirstName(contestant);
             UserInterface.GetLastName(contestant);
             UserInterface.GetEmail(contestant);
-            UserInterface.GetRegistration(contestant);
             sweepstakes.RegisterContestant(contestant);
         }
     }

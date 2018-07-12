@@ -25,11 +25,6 @@ namespace Sweepstakes
             Console.WriteLine("Please enter your E-mail address:");
             contestant.email = Console.ReadLine();
         }
-        public static void GetRegistration(Contestant contestant)
-        {
-            contestant.registrationNumber++;
-
-        }
         public static void GetSweepstakesManager()
         {
             Console.WriteLine("Which data structure would you like to use? Please enter stack or queue:");
