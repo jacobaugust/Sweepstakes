@@ -12,7 +12,7 @@ namespace Sweepstakes
         int maxContestants;
         Dictionary<int, Contestant> SweepstakesLog = new Dictionary<int, Contestant>();
 
-        public Sweepstakes()
+        public Sweepstakes(string name)
         {
             SweepstakesName();
             SweepstakesTotalContestants();

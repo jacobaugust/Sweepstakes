@@ -12,12 +12,14 @@ namespace Sweepstakes
         Contestant contestant;
         SweepstakesFactory sweepstakesFactory;
         Sweepstakes sweepstakes;
+        ISweepstakesManager manager;
         int registrationNumber;
         
 
-        public MarketingFirm()
+        public MarketingFirm(ISweepstakesManager manager)
         {
             sweepstakes = new Sweepstakes();
+            this.manager = manager;
             ManagerSelection();
             ContestantCollection();
             ContestantCollection();
